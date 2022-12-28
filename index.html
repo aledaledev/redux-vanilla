@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>typedux</title>
   </head>
@@ -23,9 +22,42 @@
     <script type="module" src="/src/ts/counter.ts"></script>-->
 
     <div>
-      <h2>Products</h2>
-      <button id="open-cart" class="absolute right-5 top-3 border-2 w-16 h-16 border-zinc-800 rounded-full"><i class="fa-solid fa-cart-shopping"></i></button>
-      <div id="products">
+      <h2 class="mx-4 my-7 font-semibold text-3xl">Products</h2>
+      <button id="open-cart" class="fixed right-5 top-3 border-2 w-16 h-16 border-zinc-800 rounded-full"><i class="fa-solid fa-cart-shopping"></i></button>
+      
+      <div id="cart" class="hidden fixed right-5 top-3 w-64 bg-gray-50 rounded-md">
+        <div class="flex justify-between p-2 border-b">
+          <h5>Cart</h5>
+          <button id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="product-cart" class="overflow-scroll max-h-52 gap-1">
+
+          <!--<div class="flex justify-center items-center px-4 gap-2">
+            <img class="w-16" src="http://peticiones.online/images/products/image04.png" alt="image">
+            <p class="font-base text-xs">descripcion del producto que esta viendo</p>
+            <div class="flex flex-col items-end">
+              <span class="font-medium">$29.9</span>
+              <span class="font-light text-xs">x3</span>
+            </div>
+            <div class="flex flex-col">
+              <button class="bg-red-600 hover:bg-red-700 px-1 text-white hover:text-gray-100"><i class="fa-solid fa-trash"></i></button>
+              <button class="bg-blue-500 hover:bg-blue-700 px-1 text-white">+</button>
+              <button class="bg-blue-500 hover:bg-blue-700 px-1 text-white">-</button>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-4 h-28">
+            <h5 class="font-semibold text-2xl my-2">Cart is empty</h5>
+            <i class="fa-solid fa-face-surprise" style="transform:scale(3);"></i>
+          </div>-->
+
+        </div>
+        <div class="flex justify-between p-2 border-t">
+          <h5 class="uppercase">total</h5>
+          <span id="total"></span>
+        </div>
+      </div>
+
+      <div id="products" class="grid grid-cols-2 gap-2 mx-2">
         
       </div>
     </div>
