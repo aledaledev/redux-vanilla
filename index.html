@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>typedux</title>
   </head>
   <body>
-    <div class="">
-      <p>Clicked: <span id="click-quantity">0</span> times</p>
-      <button id="increment">+</button>
-      <button id="decrement">-</button>
-      <button id="increment-odd">Increment if odd</button>
-      <button id="increment-async">Increment async</button>
+    <!--<div class="m-2">
+      <p class="m-4">Clicked: <span id="value"></span> times</p>
+      <div>
+        <button class="px-6 bg-green-500 text-white" id="increment">+</button>
+        <button class="px-6 bg-red-500 text-white" id="decrement">-</button>
+        <button class="border border-stone-300 px-3 text-stone-800 transition-all hover:text-white hover:bg-stone-800" id="increment-odd">Increment if odd</button>
+        <button class="border border-stone-300 px-3 text-stone-800 transition-all hover:text-white hover:bg-stone-800" id="increment-async">Increment async</button>
+      </div>
+      <form id="custom-form" class="my-2">
+        <input id="custom-input" class="border border-stone-300" type="number" placeholder="0">
+        <button class="border border-stone-300 px-3 text-stone-800 transition-all hover:text-white hover:bg-stone-800" type="submit" id="increment-custom">increment custom</button>
+      </form>
+    </div>
+    <script type="module" src="/src/ts/counter.ts"></script>-->
+
+    <div>
+      <h2>Products</h2>
+      <button id="open-cart" class="absolute right-5 top-3 border-2 w-16 h-16 border-zinc-800 rounded-full"><i class="fa-solid fa-cart-shopping"></i></button>
+      <div id="products">
+        
+      </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
+    <script src="https://kit.fontawesome.com/cddce83d5a.js" crossorigin="anonymous"></script>
   </body>
 </html>
