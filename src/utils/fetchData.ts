@@ -1,4 +1,4 @@
-import { store } from "../main"
+import { store } from "../redux/cart.store"
 
 export default async (page:number) =>  {
     const data = await fetch(`https://peticiones.online/api/products?page=${page}`)

@@ -6,60 +6,36 @@
     <title>typedux</title>
   </head>
   <body>
-    <!--<div class="m-2">
-      <p class="m-4">Clicked: <span id="value"></span> times</p>
+    <main>
+
       <div>
-        <button class="px-6 bg-green-500 text-white" id="increment">+</button>
-        <button class="px-6 bg-red-500 text-white" id="decrement">-</button>
-        <button class="border border-stone-300 px-3 text-stone-800 transition-all hover:text-white hover:bg-stone-800" id="increment-odd">Increment if odd</button>
-        <button class="border border-stone-300 px-3 text-stone-800 transition-all hover:text-white hover:bg-stone-800" id="increment-async">Increment async</button>
-      </div>
-      <form id="custom-form" class="my-2">
-        <input id="custom-input" class="border border-stone-300" type="number" placeholder="0">
-        <button class="border border-stone-300 px-3 text-stone-800 transition-all hover:text-white hover:bg-stone-800" type="submit" id="increment-custom">increment custom</button>
-      </form>
-    </div>
-    <script type="module" src="/src/ts/counter.ts"></script>-->
-
-    <div>
-      <h2 class="mx-4 my-7 font-semibold text-3xl">Products</h2>
-      <button id="open-cart" class="fixed right-5 top-3 border-2 w-16 h-16 border-zinc-800 rounded-full"><i class="fa-solid fa-cart-shopping"></i></button>
-      
-      <div id="cart" class="hidden fixed right-5 top-3 w-64 bg-gray-50 rounded-md">
-        <div class="flex justify-between p-2 border-b">
-          <h5>Cart</h5>
-          <button id="close-cart"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <div id="product-cart" class="overflow-scroll max-h-52 gap-1">
-
-          <!--<div class="flex justify-center items-center px-4 gap-2">
-            <img class="w-16" src="http://peticiones.online/images/products/image04.png" alt="image">
-            <p class="font-base text-xs">descripcion del producto que esta viendo</p>
-            <div class="flex flex-col items-end">
-              <span class="font-medium">$29.9</span>
-              <span class="font-light text-xs">x3</span>
-            </div>
-            <div class="flex flex-col">
-              <button class="bg-red-600 hover:bg-red-700 px-1 text-white hover:text-gray-100"><i class="fa-solid fa-trash"></i></button>
-              <button class="bg-blue-500 hover:bg-blue-700 px-1 text-white">+</button>
-              <button class="bg-blue-500 hover:bg-blue-700 px-1 text-white">-</button>
-            </div>
-          </div>
-          <div class="flex flex-col items-center gap-4 h-28">
-            <h5 class="font-semibold text-2xl my-2">Cart is empty</h5>
-            <i class="fa-solid fa-face-surprise" style="transform:scale(3);"></i>
-          </div>-->
-
-        </div>
-        <div class="flex justify-between p-2 border-t">
-          <h5 class="uppercase">total</h5>
-          <span id="total"></span>
-        </div>
-      </div>
-
-      <div id="products" class="grid grid-cols-2 gap-2 mx-2">
+        <h2 class="mx-4 my-7 font-semibold text-3xl">Products</h2>
+        <button id="open-cart" class="fixed right-5 top-3 border-2 w-16 h-16 border-zinc-800 rounded-full"><i class="fa-solid fa-cart-shopping"></i></button>
+        <span id="total-quantity" class="bg-blue-800 fixed right-16 top-14 text-white rounded-full w-6 h-6 text-center"></span>
         
-      </div>
+        <div id="cart" class="hidden fixed right-5 top-3 w-64 bg-gray-50 rounded-md">
+          <div class="flex justify-between p-2 border-b">
+            <h5>Cart</h5>
+            <button id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div id="product-cart" class="overflow-scroll max-h-52 gap-1">
+          </div>
+          <div class="flex justify-between p-2 border-t">
+            <h5 class="uppercase">total</h5>
+            <span id="total-price"></span>
+          </div>
+        </div>
+  
+        <div id="products" class="grid grid-cols-2 mx-2 gap-2 md:grid-cols-3 lg:grid-cols-4 md:w-9/12 justify-center md:mx-auto">
+        </div>
+
+        <ul class="flex gap-3 justify-center my-4">
+          <li class=""><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+        </ul>
+
+    </main>
+
     </div>
     <script type="module" src="/src/main.ts"></script>
     <script src="https://kit.fontawesome.com/cddce83d5a.js" crossorigin="anonymous"></script>
